@@ -98,6 +98,7 @@ stylebot.style = {
    * @param {string} value Value for CSS property
    */
   apply: function(property, value) {
+    //console.log("Aveek: style.js : selector,property,value= "+this.cache.selector+ " : "+property+ " : " +value);
     if (!this.cache.selector || this.cache.selector === '') {
       return true;
     }
@@ -239,6 +240,7 @@ stylebot.style = {
    * @param {value} value Value for property
    */
   savePropertyToCache: function(selector, property, value) {
+    console.log("Aveek:styles.js rules="+JSON.stringify(this.rules));
     // check if the selector already exists in the list
     var rule = this.rules[selector];
 

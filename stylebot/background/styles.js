@@ -63,6 +63,7 @@ Styles.prototype.set = function(url, value) {
 };
 
 Styles.prototype.persist = function() {
+  //console.log("Aveek: styles Persist!");
   chrome.storage.local.set({'styles': this.styles});
 }
 

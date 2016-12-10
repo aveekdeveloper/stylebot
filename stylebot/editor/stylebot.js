@@ -48,6 +48,7 @@ var stylebot = {
    * Open / close editor
    */
   toggle: function() {
+    console.log("Aveek: toggle");
     if (this.status) {
       this.close();
     } else {
